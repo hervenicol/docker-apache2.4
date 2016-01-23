@@ -1,0 +1,6 @@
+httpd:
+  image: hervenicol/apache:2.4
+  ports:
+    - "8004:80"
+  volumes:
+    - ../www:/var/www/html
