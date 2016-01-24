@@ -2,5 +2,7 @@ httpd:
   image: hervenicol/apache:2.4
   ports:
     - "8004:80"
+  environment:
+    - "PHP_SERVER=172.17.0.1:9000"
   volumes:
     - ../www:/var/www/html
